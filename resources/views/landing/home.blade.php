@@ -22,6 +22,22 @@
       <link href="css/responsive.css" rel="stylesheet" />
    </head>
    <body>
+      <style>
+         .dis-p-cl{
+            font-size: 15px;
+            margin-top: 4%;
+         }
+         .dis-pr{
+            font-size: 12px;
+            margin-top: 4%;
+            color:red;
+         }
+         .dis-prs{
+            font-size: 12px;
+            margin-top: 4%;
+            text-decoration: line-through;
+         }
+      </style>
       <div class="hero_area">
          <!-- header section strats -->
          @include('landing.header')

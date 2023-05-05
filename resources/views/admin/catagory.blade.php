@@ -51,7 +51,7 @@
                       <table class="table">
                         <thead>
                           <tr>
-                            <th>Id</th>
+                            <!-- <th>Id</th> -->
                             <th>Catagory Name</th>
                             <th>Action</th>
                           </tr>
@@ -59,11 +59,11 @@
                         <tbody>
                         @foreach ($catagory as $cat)
                           <tr>
-                            <td>{{$cat->id}}</td>
+                            <!-- <td>{{$cat->id}}</td> -->
                             <td>{{$cat->catgories_name}}</td>
                             <td>
                               <a href="#" class="btn btn-success">Edit</a>
-                              <a href="#" class="btn btn-danger">Delete</a>
+                              <a onclick="return confirm('Are you sure to delete ths catogory?')" href="{{ url ('delete_catogories',$cat->id) }}" class="btn btn-danger">Delete</a>
                             </td>
                           </tr>
                         @endforeach

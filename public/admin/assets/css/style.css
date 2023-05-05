@@ -21149,7 +21149,7 @@ div.tagsinput {
   padding: 0 20px 20px 20px;
 }
 /*# sourceMappingURL=maps/style.css.map */
-.form-control:focus{
+.form-control:focus, textarea.form-control:focus{
   border: 1px solid rgba(71, 164, 71, 0.5);
   background-color: #fff;
 }

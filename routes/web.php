@@ -33,5 +33,15 @@ Route::middleware([
 });
 
 Route::get('/redirect', [HomeCotroller::class, 'redirect']);
+Route::get('/product_details/{id}', [HomeCotroller::class, 'product_details']);
+Route::get('/add_cart/{id}', [HomeCotroller::class, 'add_cart']);
+
 Route::get('/catagory', [AdminController::class, 'catagory']);
 Route::post('/add_catagory', [AdminController::class, 'add_catagory']);
+Route::get('/delete_catogories/{id}', [AdminController::class, 'delete_catogories']);
+Route::get('/product', [AdminController::class, 'product']);
+Route::post('/add_product', [AdminController::class, 'add_product']);
+Route::get('/show_product', [AdminController::class, 'show_product']);
+Route::get('/delete_product/{id}', [AdminController::class, 'delete_product']);
+Route::get('/edit_product/{id}', [AdminController::class, 'edit_product']);
+Route::post('/update_product', [AdminController::class, 'update_product']);

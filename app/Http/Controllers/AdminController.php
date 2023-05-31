@@ -9,6 +9,7 @@ use App\Models\Catgory;
 use App\Models\Product;
 
 // This is my admin controller
+// New demo style
 
 class AdminController extends Controller
 {

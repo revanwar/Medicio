@@ -8,6 +8,8 @@ use App\Models\Catgory;
 
 use App\Models\Product;
 
+// This is my admin controller
+
 class AdminController extends Controller
 {
     public function catagory()

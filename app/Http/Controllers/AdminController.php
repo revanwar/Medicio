@@ -10,7 +10,7 @@ use App\Models\Product;
 
 // This is my admin controller
 // New demo style
-
+// thhiresd demo style
 class AdminController extends Controller
 {
     public function catagory()
